@@ -1,0 +1,63 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.nytimes.com/svc/books/v3/lists/current/list_name.json?api-key=<ny_times_api_key>
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.2.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Date:
+      - Mon, 11 Apr 2022 17:05:08 GMT
+      Content-Type:
+      - application/json; charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Server:
+      - Apache/2.4.38 (Debian)
+      X-Powered-By:
+      - PHP/7.4.13
+      Via:
+      - 1.1 google, 1.1 varnish
+      Accept-Ranges:
+      - bytes
+      Age:
+      - '0'
+      X-Served-By:
+      - cache-sea4429-SEA
+      X-Cache:
+      - MISS
+      X-Cache-Hits:
+      - '0'
+      X-Timer:
+      - S1649696708.202233,VS0,VE106
+      Vary:
+      - Accept-Encoding
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Headers:
+      - Accept, Content-Type, X-Forwarded-For, X-Prototype-Version, X-Requested-With
+      Access-Control-Expose-Headers:
+      - Content-Length, X-JSON
+      Access-Control-Allow-Methods:
+      - GET, OPTIONS
+    body:
+      encoding: ASCII-8BIT
+      string: '{"status":"ERROR","copyright":"Copyright (c) 2022 The New York Times
+        Company.  All Rights Reserved.","errors":["No list found for list name and\/or
+        date provided.","Not Found"],"results":[]}'
+  recorded_at: Mon, 11 Apr 2022 17:05:08 GMT
+recorded_with: VCR 6.1.0

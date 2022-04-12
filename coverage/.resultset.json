@@ -1,0 +1,42 @@
+{
+  "RSpec": {
+    "coverage": {
+      "/Users/jacobyarborough/turing/misc/my_projects/booklist/app/helpers/application_helper.rb": {
+        "lines": [
+          1,
+          null
+        ]
+      },
+      "/Users/jacobyarborough/turing/misc/my_projects/booklist/app/services/nyt_service.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null,
+          1,
+          0,
+          0,
+          null,
+          null,
+          1,
+          null,
+          1,
+          1,
+          1,
+          null,
+          null,
+          null,
+          1,
+          1,
+          null,
+          null,
+          null
+        ]
+      }
+    },
+    "timestamp": 1649699128
+  }
+}

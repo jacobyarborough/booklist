@@ -1,0 +1,8 @@
+<h1><%= "NYT #{@books[:results][:list_name]} List" %></h1>
+
+<% @books[:results][:books].each do |book| %>
+  <%= link_to book[:title], "/books/#{book[:primary_isbn13]}" %><br>
+  <%= book[:description] %><br>
+  <%= image_tag book[:book_image] %><br>
+  <br>
+<% end %>

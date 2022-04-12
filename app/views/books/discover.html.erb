@@ -1,0 +1,5 @@
+<h1>NYT Best Seller Categories</h1>
+
+<% @categories[:results].each do |category| %>
+  <%= link_to category[:display_name], "/discover/#{category[:list_name_encoded]}" %><br>
+<% end %>
